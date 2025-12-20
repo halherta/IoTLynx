@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650" width="650" height="650">
+  <defs>
+    <!-- Define gradients and patterns -->
+    <linearGradient id="boardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#78D678;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="650" height="650" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="320" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">ESP32-C6 Custom Development Board</text>
+  
+  <!-- Main Board -->
+  <g transform="translate(150, 150)">
+    <!-- Board PCB with rounded corners - width reduced by 10%, length to 450px -->
+    <rect x="0" y="0" width="324" height="450" rx="20" ry="20" fill="url(#boardGradient)" stroke="#2d5016" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Mounting holes -->
+    <circle cx="30" cy="30" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+    <circle cx="294" cy="30" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+    <circle cx="30" cy="420" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+    <circle cx="294" cy="420" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+    
+    <!-- ESP32-C6-MINI-1 Module (moved to top center, antenna hanging off) -->
+    <rect x="62" y="-35" width="200" height="110" rx="5" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    <rect x="72" y="-25" width="180" height="90" fill="#fff" stroke="#999" stroke-width="1"/>
+    <text x="162" y="20" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">ESP32-C6</text>
+    <text x="162" y="40" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">MINI-1</text>
+    
+    <!-- USB-C Connector (moved to bottom edge, touching board) -->
+    <rect x="122" y="430" width="80" height="20" rx="6" fill="#d0d0d0" stroke="#999" stroke-width="1.5"/>
+    <rect x="132" y="435" width="60" height="10" rx="2" fill="#b0b0b0"/>
+    <ellipse cx="147" cy="440" rx="3" ry="2" fill="#888"/>
+    <ellipse cx="157" cy="440" rx="3" ry="2" fill="#888"/>
+    <ellipse cx="167" cy="440" rx="3" ry="2" fill="#888"/>
+    <ellipse cx="177" cy="440" rx="3" ry="2" fill="#888"/>
+    
+    <!-- Push Buttons (centered on board) -->
+    <!-- RST(EN) Button -->
+    <g transform="translate(92, 225)">
+      <circle cx="0" cy="0" r="18" fill="#4a4a4a" stroke="#000" stroke-width="2"/>
+      <circle cx="0" cy="0" r="12" fill="#d0d0d0"/>
+      <text x="0" y="-28" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">RST(EN)</text>
+    </g>
+    
+    <!-- BOOT(IO9) Button -->
+    <g transform="translate(232, 225)">
+      <circle cx="0" cy="0" r="18" fill="#4a4a4a" stroke="#000" stroke-width="2"/>
+      <circle cx="0" cy="0" r="12" fill="#d0d0d0"/>
+      <text x="0" y="-28" font-family="Arial" font-size="9" text-anchor="middle" fill="#000">BOOT(IO9)</text>
+    </g>
+    
+    <!-- Pin Headers - Left Side (J3) - 14 pins, centered -->
+    <g id="leftHeaders">
+      <!-- Pin rectangles -->
+      <rect x="10" y="95" width="15" height="282" fill="#1a1a1a" stroke="#000" stroke-width="1"/>
+      <!-- Individual pins with explicit borders -->
+      <rect x="12" y="98" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="118" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="138" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="158" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="178" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="198" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="218" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="238" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="258" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="278" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="298" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="318" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="338" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="12" y="358" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+    </g>
+    
+    <!-- Pin Headers - Right Side (J2) - 14 pins, centered -->
+    <g id="rightHeaders">
+      <!-- Pin rectangles -->
+      <rect x="299" y="95" width="15" height="282" fill="#1a1a1a" stroke="#000" stroke-width="1"/>
+      <!-- Individual pins with explicit borders -->
+      <rect x="301" y="98" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="118" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="138" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="158" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="178" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="198" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="218" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="238" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="258" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="278" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="298" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="318" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="338" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="301" y="358" width="11" height="16" fill="#d4af37" stroke="#2a2a2a" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Pin Labels - Left Side -->
+  <g font-family="Arial, monospace" font-size="12" font-weight="bold">
+    <text x="145" y="261" text-anchor="end" fill="#d32f2f">+5Vin</text>
+    <text x="145" y="281" text-anchor="end" fill="#1976d2">IO2</text>
+    <text x="145" y="301" text-anchor="end" fill="#1976d2">IO3</text>
+    <text x="145" y="321" text-anchor="end" fill="#8b4513">RST(EN)</text>
+    <text x="145" y="341" text-anchor="end" fill="#1976d2">IO4</text>
+    <text x="145" y="361" text-anchor="end" fill="#1976d2">IO5</text>
+    <text x="145" y="381" text-anchor="end" fill="#1976d2">IO0</text>
+    <text x="145" y="401" text-anchor="end" fill="#1976d2">IO1</text>
+    <text x="145" y="421" text-anchor="end" fill="#1976d2">IO6</text>
+    <text x="145" y="441" text-anchor="end" fill="#1976d2">IO7</text>
+    <text x="145" y="461" text-anchor="end" fill="#1976d2">IO14</text>
+    <text x="145" y="481" text-anchor="end" fill="#1976d2">IO15</text>
+    <text x="145" y="501" text-anchor="end" fill="#000">GND</text>
+    <text x="145" y="521" text-anchor="end" fill="#000">GND</text>
+  </g>
+  
+  <!-- Pin Labels - Right Side -->
+  <g font-family="Arial, monospace" font-size="12" font-weight="bold">
+    <text x="479" y="261" text-anchor="start" fill="#d32f2f">+3V3</text>
+    <text x="479" y="281" text-anchor="start" fill="#1976d2">IO16</text>
+    <text x="479" y="301" text-anchor="start" fill="#1976d2">IO17</text>
+    <text x="479" y="321" text-anchor="start" fill="#1976d2">IO23</text>
+    <text x="479" y="341" text-anchor="start" fill="#1976d2">IO22</text>
+    <text x="479" y="361" text-anchor="start" fill="#1976d2">IO21</text>
+    <text x="479" y="381" text-anchor="start" fill="#1976d2">IO20</text>
+    <text x="479" y="401" text-anchor="start" fill="#1976d2">IO19</text>
+    <text x="479" y="421" text-anchor="start" fill="#1976d2">IO18</text>
+    <text x="479" y="441" text-anchor="start" fill="#1976d2">IO9</text>
+    <text x="479" y="461" text-anchor="start" fill="#1976d2">IO8</text>
+    <text x="479" y="481" text-anchor="start" fill="#000">GND</text>
+    <text x="479" y="501" text-anchor="start" fill="#000">GND</text>
+    <text x="479" y="521" text-anchor="start" fill="#000">GND</text>
+  </g>
+</svg>
+
