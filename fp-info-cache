@@ -1,4 +1,4 @@
-26393979808892141
+26395746085306311
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104733,6 +104733,13 @@ HC-SR04
 0
 4
 4
+myparts
+IoTLynx_Template
+
+
+0
+28
+28
 myparts
 JST_ZH_6
 
