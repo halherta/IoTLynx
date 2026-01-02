@@ -23,7 +23,7 @@
   <rect width="650" height="650" fill="#f5f5f5"/>
   
   <!-- Title -->
-  <text x="320" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">ESP32-C6 Custom Development Board</text>
+  <text x="320" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">IoTLynx  Development Board</text>
   
   <!-- Main Board -->
   <g transform="translate(150, 150)">
