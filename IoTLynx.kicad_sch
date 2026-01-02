@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "1236ddee-5048-4cb2-b65e-bbfdfe909415")
 	(paper "A4")
+	(title_block
+		(title "IoTLynx ESP32-C6 Development board")
+		(date "2026-01-02")
+		(rev "v0.1")
+		(company "hussamtalkstech.com")
+		(comment 1 "Author: Hussam Al-Hertani")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
